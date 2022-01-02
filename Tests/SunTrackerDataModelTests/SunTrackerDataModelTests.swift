@@ -2,10 +2,16 @@ import XCTest
 @testable import SunTrackerDataModel
 
 final class SunTrackerDataModelTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SunTrackerDataModel().text, "Hello, World!")
+    
+    func testCoreDataCloudKitDataModelName() throws {
+        
+        XCTAssertEqual(CoreDataManager.cloudKitDataModel, "SunTimeDataModel")
+    }
+    
+    func testCoreDataModel() {
+        
+        // Future Tests to Write
+        
+       //  XCTAssertNotNil()
     }
 }

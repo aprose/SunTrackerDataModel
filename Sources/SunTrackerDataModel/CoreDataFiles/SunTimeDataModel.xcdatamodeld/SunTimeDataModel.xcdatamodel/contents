@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SnapShotForDay" representedClassName="SnapShotForDay" syncable="YES">
+        <attribute name="amountOfTimeTodayInSun" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="numberOfUpdatesSoFar" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="todaysDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="UVInformation" representedClassName="UVInformation" syncable="YES">
+        <attribute name="currentUV" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="currentUVatDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeFive" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeFour" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeOne" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeSix" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeThree" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTimeSkinTypeTwo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxUV" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxUVatDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="UVInformation" predicateString="maxUVatDateTime &gt; CAST(636566281.818509, &quot;NSDate&quot;)"/>
+    <elements>
+        <element name="SnapShotForDay" positionX="-54" positionY="-9" width="128" height="118"/>
+        <element name="UVInformation" positionX="-63" positionY="-18" width="128" height="223"/>
+    </elements>
+</model>
